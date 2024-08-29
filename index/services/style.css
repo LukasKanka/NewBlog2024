@@ -64,14 +64,18 @@ nav ul {
     width: 90%;
     margin: 0 auto;
   }
+  
+  nav ul {
+      flex-direction: column;
+  }
 
   nav a {
-    display: none;
+    /*display: none;*/
   }
 
-  .icon {
-    display: block;
-  }
+  /*.icon {*/
+  /*  display: block;*/
+  /*}*/
 }
 
 /* Hero - section */
@@ -112,6 +116,7 @@ nav ul {
     font-size: 35px;
     height: 80px;
     margin-bottom: 5px;
+    color: black;
   }
 }
 
@@ -556,3 +561,18 @@ img {
     font-size: 10px;
   }
 }
+
+
+/* Rolovací tlačítko */
+  #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /*butoon přes obsah*/
+    z-index: 99;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: transparent;
